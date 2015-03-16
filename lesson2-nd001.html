@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Note by Jaya Satrio</title>
+  <link rel="stylesheet" type="text/css" href="lesson-note.css">
+
+</head>
+
+<body>
+  <div class='header'>
+    <div class='name'><b>name:</b> Jaya Satrio Hendrick</div>
+    <div class='title'>Introduction to Programming Nanodegree</div>
+  </div>
+  <div class='content-body'>
+    <div class='table-content'>
+      <div class='table-content-title'>Table of content</div>
+      <ul class='main-content'>
+        <li class='main-branch'><a href='#lesson-1'>Lesson 1: Basic of Web and HTML</a></li>
+        <li>
+          <ul>
+            <li><a class='branch-link' href='#lesson-1-1'>How a web actually works</a></li>
+            <li><a class='branch-link' href='#lesson-1-2'>HTML mark-up language</a></li>
+            <li><a class='branch-link' href='#lesson-1-3'>Side-note</a></li>
+          </ul>
+        </li>
+        <li class='main-branch'><a href='#lesson-2'>Lesson 2: Creating a Structured Document with HTML</a></li>
+        <li>
+          <ul>
+            <li><a class='branch-link' href='#lesson-2-1'>Difference between HTML, CSS, Javascript</a></li>
+            <li><a class='branch-link' href='#lesson-2-2'>Tree-like structure</a></li>
+            <li><a class='branch-link' href='#lesson-2-3'>Boxes everywhere (changed by CSS)</a></li>
+            <li><a class='branch-link' href='#lesson-2-4'>Boxify work-structure (big to small)</a></li>
+            <li><a class='branch-link' href='#lesson-2-5'>Programmer's tools</a></li>
+          </ul>
+        </li>
+        <li class='main-branch'><a href='#lesson-3'>Lesson 3: Adding CSS Style to HTML Structure</a></li>
+        <li>
+          <ul>
+            <li><a class='branch-link' href='#lesson-3-1'>Avoid Repetition</a></li>
+          </ul>
+        </li>
+        <li class='main-branch'><a href="#lesson-4">Lesson 4: Telling Computer What to Do</a></li>
+        <li>
+          <ul>
+            <li><a href="#lesson-4-1" class='branch-link'>Introduction to "Serious" Programming</a></li>
+            <li><a href="#lesson-4-2" class='branch-link'>Input > Function > Output</a></li>
+          </ul>  
+        </li>
+      </ul>
+    </div>
+    <div class='content'>
+      <div id="lesson-1">
+        <h4>LESSON 1:</h4>
+        <h2>Basic of Web and HTML</h2>
+      </div>
+      <div>
+        <p>
+          What's coding? Coding is simply a way to communicate with the computers. Computer doesn't have language 
+          like human do, and it's stupid. Somehow, we need to interpret our language so that computer can understand us. That's what coding is actually is.
+        </p>
+        <p>
+          HTML(Hyper Text Markup Language) is the type of file that is commonly
+          used in a webpage. A webpage can also contain plain-text, images, videos, 
+          links, but HTML is the brain of a webpage.
+        </p>
+      </div>
+      <div>
+        <div id="lesson-1-1" class='subhead'>How a web actually works</div>
+        <p>
+          When you surf with <em>browser</em> on your computer, the computer sends data to <em>internet</em> request
+          using the protocol <em>http</em> to the <em>server</em>. The server then finds
+          the appropriate answer and return it again to our computer. Server itself is actually a computer, but 
+          it's super strong and it will be a waste of potential if it is used like the regular computer (surfing facebook??).
+        </p>
+      </div>
+      <div id="lesson-1-2">
+        <div class='subhead'>HTML mark-up languange</div>
+        <p>
+          HTML consists of many mark-up languages, following the text. The mark-up language doesn't appear on the webpage, but it gives the special effect to the text that it applies to. A mark-up languages has a
+          structure like: &#60;name>text&#60;/name>. Some mark-up language need to have open tag and closing tag, 
+          but some doesn't. Example of a mark-up language:
+        </p>
+      </div>
+      <div>
+        <p>
+          <b>1. Bold</b><br>
+          The formula for bold is &#60;b>text&#60;/b> (b means bold). For example: 
+          If we write &#60;b>text&#60;/b>, the computer will intepret it as:<b>text</b>
+        </p>
+        <p>
+          <b>2.Italic</b><br>
+          The formula for italic is &#60;em>text&#60;/em> (em means emphasis). For example: 
+          If we write &#60;em>text&#60;/em>, the computer will intepret it as:<em>text</em>
+        </p>
+        <p>
+          <b>3.Break</b><br>
+          Br means break. HTML can't understand enter command. Some text will need to have break to give reader
+          nice space while reading. A long one line text is extremelly exhausting to read.
+          The tag for br is &#60;br>. This is one of tag that doesn't need closing tag. 
+          For example: text&#60;br>text will be intepreted as: <br>text<br>text
+        </p>
+        <p>
+          <b>4. Paragraph</b><br>
+          Another way to break long line is using &#60;p> symbol (p means paragraph).
+          This one needs closing tag, while break tag doesn't. But there is quite a difference
+          between &#60;br> and &#60;p>. Break just break the line, while paragraph will create
+          some sort of bounding box accross the content of it. This box will have attribute
+          like height and weight. We can classify this into 2: inline tag and block tag.
+          Bold, italic, break are inline tag, while p, div, form are block tag.
+        </p>
+        <p>
+          <b>5.Links</b><br>
+          The formula to create link is &#60;a attr (attribute)>content&#60;/a> (a means anchor). For example: 
+          If we write &#60;a href="www.udacity.com">text&#60;/a>, the word "text" will be
+          a link:<a href="www.udacity.com">text</a>
+        </p>
+        <p>
+          <b>6.Images</b><br>
+          The formula for images is &#60;img attr alt=""> (img means image). For example: 
+          If we write &#60;img src="http://goo.gl/Sh9FXJ" alt="html">, computer will display
+          images based on the link we provide:<img src="http://goo.gl/Sh9FXJ" alt="html" width="50">
+          Note that the image will appear inline with the text, and the tag doesn't need 
+          closing tag (just like &#60;br>). Alt is the text that will appear when the image
+          couldn't be loaded (maybe wrong links, etc). So alt is not really necessarry,
+          but it is good to have.
+        </p>
+      </div>
+      <div>
+        <div id="lesson-1-3" class='subhead'>Side-note</div>
+        <p>
+          While knowing these <em>html tag</em>, we already have basic webpage, in order
+          to create an actual website, it needs <em>more</em> than just mark-up languages.
+          The structure of actual webpage is:
+          <br>&#60;!doctype html><br>
+          &#60;html><br>
+          &#60;head><br>
+          &#60;/head><br>
+          &#60;body><br>
+          &#60;mark-up languages><br>
+          &#60;/body><br>
+          &#60;/html><br>
+        </p>
+
+        <p>
+          doctype just the indicator of html page, head will contain title (this will be displayed on the top on the browser tab), javascript, css, meta-datas, 
+          fonts, etc. Body is where the mark-up languages is.
+        </p>
+      </div>
+      <div id="lesson-2" class='lesson-head'>
+        <h4>LESSON 2:</h4>
+        <h2>Creating a Structured Document with HTML</h2>
+      </div>
+      <div>
+        <div id="lesson-2-1" class='subhead'>Difference between HTML, CSS, Javascript</div>
+        <p>
+          HTML file consist of either inline or block. Block element form "invincible box" around the content. The most commonly used is &#60;div>. While the example of inline tag is &#60;span>.<br>
+          CSS is the tool to style the HTML file, you can adjust padding, color, positions, etc. And Javascript is the tool to modify the existing element to behave like what you want it to be. This three are best friends and work complement each other to create beautiful-stunning website.
+        </p>
+      </div>
+      <div id="lesson-2-2" class='subhead'>Tree-like structure</div>
+      <p>
+        If you analyze a complete HTML file, you will notice what is called <b>tree-like structure</b>. It means it has branches, and you can dig each branch to go deeper and deeper into the content. A great way to analyze an HTML file is by using Google Chrome > tools > developer tools. 
+      </p>
+      <div id="lesson-2-3" class='subhead'>Boxes everywhere </div>
+      <p>
+        When you analyze HTML file using developer tools from Chrome, you will find that all elements are displayed as boxes, even the non-box such as text, or circle image, they have the "invincible box" around them. Why is that so? Go to the next note.
+      </p>
+      <div id="lesson-2-4" class='subhead'>Boxified work-structure</div>
+      <p>
+        This boxed-structure leads to a method of boxified work-structure. When a professional web developer sees a page, they will think of boxes: first the <em>main</em> boxes and inside there will be <em>child</em> boxes, and so on untill it becomes the tree-like structure with boxes as the branch. They classify the content with boxes, they sketch or using paper-cuts to imagine the web-page structure. In that way, they can structure the web-page easily before jump in to write code.
+      </p>
+      <div id="lesson-2-5" class='subhead'>Programmer's tools</div>
+      <p>
+        There are many good tools for writing the program but the most recommended is <a href='www.sublimetext.com'>Sublime text</a>. This software is specially designed for writing codes, it's fast and convenient. <br>Another great tool is <a href='www.scratchpad.io'>scratchpad.io</a> but it's not suitable if you are writing long codes, it is great for testing out codes because you can directly see the result on your left. <br>Technically you can use plain-text editor such as textedit or notepad, but they are not meant to be a programmer's tool.
+      </p>   
+    </div>
+  </div>
+</body>
+
+</html>
